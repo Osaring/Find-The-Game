@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find The Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="card">
+        <h1>🎮 Find The Game</h1>
+        <p>Trouve le jeu avant les autres.</p>
+      </header>
+
+      <section class="card" id="joinCard">
+        <label for="pseudoInput">Pseudo</label>
+        <div class="row">
+          <input id="pseudoInput" maxlength="24" placeholder="Ex: Alex" />
+          <button id="joinBtn">Rejoindre</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <p id="status">En attente…</p>
+        <div class="imageWrap">
+          <img id="gameImage" alt="Image du jeu vidéo à deviner" />
+        </div>
+      </section>
+
+      <section class="card" id="playCard">
+        <label for="guessInput">Ta proposition</label>
+        <div class="row">
+          <input id="guessInput" maxlength="64" placeholder="Ex: mario kart" disabled />
+          <button id="guessBtn" disabled>Envoyer</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Scores</h2>
+        <ul id="playersList" class="list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Flux des propositions</h2>
+        <ul id="guessFeed" class="list"></ul>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
