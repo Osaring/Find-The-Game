@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find The Game</title>
+  </head>
+  <body>
+    <h1>Serveur Express + Socket.IO prêt ✅</h1>
+    <p>Ouvrez la console pour vérifier la connexion Socket.IO.</p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      socket.on('connect', () => {
+        console.log('Connecté au serveur Socket.IO avec l\'id :', socket.id);
+      });
+    </script>
+  </body>
+</html>
