@@ -1,0 +1,9 @@
+{
+  "name": "find-the-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Find-The-Game project",
+  "scripts": {
+    "start": "echo \"No start script defined\""
+  }
+}
