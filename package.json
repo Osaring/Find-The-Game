@@ -1,0 +1,12 @@
+{
+  "name": "find-the-game",
+  "version": "1.0.0",
+  "description": "Initialisation du projet Node.js pour Find-The-Game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
